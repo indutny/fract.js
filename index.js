@@ -2,9 +2,9 @@ var bn = require('bn.js');
 
 // Rational number
 function Fraction(num, denom) {
-  if (typeof num === 'number')
+  if (typeof num === 'number' || typeof num === 'string')
     num = new bn(num, 16);
-  if (typeof denom === 'number')
+  if (typeof denom === 'number' || typeof denom === 'string')
     denom = new bn(denom, 16);
   if (typeof denom === 'object') {
     var g = num.gcd(denom);
