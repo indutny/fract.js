@@ -1,0 +1,30 @@
+{
+  "name": "fract.js",
+  "version": "0.0.0",
+  "description": "Fractional numbers using bn.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/**/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:indutny/fract.js"
+  },
+  "keywords": [
+    "Fractional",
+    "bignum"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/fract.js/issues"
+  },
+  "homepage": "https://github.com/indutny/fract.js",
+  "devDependencies": {
+    "bn.js": "^0.13.0",
+    "mocha": "^1.20.1"
+  },
+  "peerDependencies": {
+    "bn.js": "^0.13.0"
+  }
+}
