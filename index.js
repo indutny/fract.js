@@ -2,9 +2,10 @@ var bn = require('bn.js');
 
 // Rational number
 function Fraction(num, denom) {
-  if (num instanceof Fraction)
-    return num;
-
+  if (typeof num === 'number')
+    num = new bn(num, 16);
+  if (typeof denom === 'number')
+    denom = new bn(denom, 16);
   if (typeof denom === 'object') {
     var g = num.gcd(denom);
     if (g.cmpn(1) !== 0) {
